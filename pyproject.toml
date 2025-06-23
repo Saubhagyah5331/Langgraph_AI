@@ -1,0 +1,34 @@
+[project]
+name = "langgraph-v2"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Saubhagyah5331",email = "saubhagya.v@simformsolutions.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10, <4.0"
+dependencies = [
+    "langchain (>=0.3.25,<0.4.0)",
+    "langchain-community (>=0.3.25,<0.4.0)",
+    "langchain-core (>=0.3.65,<0.4.0)",
+    "langgraph (>=0.4.8,<0.5.0)",
+    "google (>=3.0.0,<4.0.0)",
+    "genai (>=2.1.0,<3.0.0)",
+    "langchain-google-genai (>=2.1.5,<3.0.0)",
+    "youtube-search (>=2.1.2,<3.0.0)",
+    "worldnewsapi (>=2.2.0,<3.0.0)",
+    "google-search-results (>=2.4.2,<3.0.0)",
+    "loguru (>=0.7.3,<0.8.0)",
+    "rich (>=14.0.0,<15.0.0)",
+    "langgraph-checkpoint-mongodb (>=0.1.4,<0.2.0)",
+    "streamlit (>=1.46.0,<2.0.0)",
+    "langfuse (>=3.0.3,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "langgraph_v2", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
